@@ -13,14 +13,14 @@ class EventForm(ModelForm):
 
     def clean(self):
         cleaned_data = super().clean()
-        start_time = cleaned_data.get('start_time')
-        end_time = cleaned_data.get('end_time')
+        start_time = cleaned_data.get("start_time")
+        end_time = cleaned_data.get("end_time")
         if start_time > end_time:
-            raise ValidationError('Start time and date must be before end time and date.')
+            raise ValidationError("Start time and date must be before end time and date.")
 
 
 # class AccountForm(ModelForm):
-   
+
 #     class Meta:
 #         model = Account
 #         fields = [
