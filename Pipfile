@@ -9,6 +9,9 @@ black = "*"
 [packages]
 psycopg2-binary = "==2.8.3"
 Django = "==2.2"
+django-crispy-forms = "*"
+django-filter = "*"
+djangorestframework = "*"
 
 [requires]
 python_version = "3.7"
